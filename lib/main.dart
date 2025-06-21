@@ -1,8 +1,15 @@
 import 'package:blinkit_clone/ui/screens/splash/splash_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
-void main(){
+void main() {
   runApp(const MyApp());
+  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+    statusBarColor: Colors.transparent, // Transparent or match your background
+    statusBarIconBrightness:
+        Brightness.dark, // Use 'Brightness.light' for white icons
+    statusBarBrightness: Brightness.light, // For iOS
+  ));
 }
 
 class MyApp extends StatelessWidget {
@@ -12,9 +19,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       home: const SplashScreen(),
-
     );
   }
 }
