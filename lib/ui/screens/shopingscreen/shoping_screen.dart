@@ -1,7 +1,8 @@
-import 'dart:math';
+// ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'package:blinkit_clone/ui/widgets/Customcard.dart';
+import 'package:flutter/material.dart';
 
 import 'package:blinkit_clone/ui/widgets/customappbar.dart';
-import 'package:flutter/material.dart';
 
 class ShopingScreen extends StatelessWidget {
   const ShopingScreen({super.key});
@@ -54,94 +55,32 @@ class ShopingScreen extends StatelessWidget {
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(16, 0, 8, 6),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
                 children: [
-                  Stack(
-                    children: [
-                      Container(
-                        decoration: BoxDecoration(
-                            color: Colors.blue,
-                            borderRadius: BorderRadius.circular(10)),
-                        height: 108,
-                        width: 96,
-                        child: ClipRRect(
-                          borderRadius: BorderRadiusGeometry.circular(10),
-                          child: Image.asset(
-                            "assets/images/milk.png",
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 66, top: 96),
-                        child: SizedBox(
-                          height: 18,
-                          width: 30,
-                          child: TextButton(
-                            onPressed: () {},
-                            style: ButtonStyle(
-                              padding: WidgetStateProperty.all(EdgeInsets.zero),
-                              backgroundColor:
-                                  WidgetStateProperty.all(Colors.white),
-                              shape: WidgetStateProperty.all(
-                                RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(5),
-                                ),
-                              ),
-                              side: WidgetStateProperty.all(
-                                BorderSide(color: Colors.green, width: 2),
-                              ),
-                            ),
-                            child: Center(
-                              child: Text(
-                                "Add",
-                                style: TextStyle(
-                                    fontSize: 8,
-                                    color: Colors.green), // Smaller font
-                                overflow: TextOverflow.clip,
-                                softWrap: false,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
+                  CustomCardCart(
+                    imagePath: "assets/images/milk.png",
+                    iName: "Amul Taaza Toned\nFresh Milk",
+                    price: "27",
                   ),
-                  SizedBox(
-                    height: 2,
+                  CustomCardCart(
+                      imagePath: "assets/images/potato.png",
+                      iName: "Amul Taaza Toned\nFresh Milk",
+                      price: "37"),
+                  CustomCardCart(
+                    imagePath: "assets/images/tomato.png",
+                    iName: "Amul Taaza Toned\nFresh Milk",
+                    price: "37",
                   ),
-                  Text(
-                    "Amul Taaza Toned\nFresh Milk",
-                    style:
-                        TextStyle(fontFamily: "poppins regular", fontSize: 10),
+                  CustomCardCart(
+                    imagePath: "assets/images/milk.png",
+                    iName: "Amul Taaza Toned\nFresh Milk",
+                    price: "27",
                   ),
-                  SizedBox(
-                    height: 5,
-                  ),
-                  Row(
-                    children: [
-                      Image.asset(
-                        "assets/images/stopwatch.png",
-                        height: 13,
-                      ),
-                      SizedBox(
-                        width: 5,
-                      ),
-                      Text(
-                        "16 MINS",
-                        style: TextStyle(
-                            fontFamily: "poppinst regular",
-                            fontSize: 10,
-                            color: Colors.grey),
-                      )
-                    ],
-                  )
                 ],
               ),
-            )
+            ),
           ],
         ));
   }

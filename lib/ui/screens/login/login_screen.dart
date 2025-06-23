@@ -1,5 +1,4 @@
 import 'package:blinkit_clone/ui/screens/bottomnavbar/bottomnavbar.dart';
-import 'package:blinkit_clone/ui/screens/homescreen/homescreen.dart';
 import 'package:blinkit_clone/ui/widgets/uihelper.dart';
 import 'package:flutter/material.dart';
 
