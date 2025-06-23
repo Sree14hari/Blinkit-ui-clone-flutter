@@ -10,7 +10,9 @@ class ShopingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: CustAppBar(),
+        appBar: CustAppBar(
+          textColor: Colors.black,
+        ),
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [

@@ -1,11 +1,14 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 
 class CustAppBar extends StatelessWidget implements PreferredSizeWidget {
   final Color backgroundColor;
+  final Color textColor;
 
   const CustAppBar({
     super.key,
     this.backgroundColor = const Color(0xFFF7CB45), // default color
+    this.textColor = const Color(0XFFFFFFFF),
   });
 
   @override
@@ -31,16 +34,16 @@ class CustAppBar extends StatelessWidget implements PreferredSizeWidget {
                       Text(
                         "Blinkit in",
                         style: TextStyle(
-                          fontFamily: "poppins bold",
-                          fontSize: 12,
-                        ),
+                            fontFamily: "poppins bold",
+                            fontSize: 12,
+                            color: textColor),
                       ),
                       Text(
                         "16 minutes",
                         style: TextStyle(
-                          fontFamily: "poppins bold",
-                          fontSize: 20,
-                        ),
+                            fontFamily: "poppins bold",
+                            fontSize: 20,
+                            color: textColor),
                       ),
                     ],
                   ),
@@ -50,6 +53,7 @@ class CustAppBar extends StatelessWidget implements PreferredSizeWidget {
                     icon: Image.asset(
                       "assets/icons/person.png",
                       height: 32,
+                      color: textColor,
                     ),
                   )
                 ],
@@ -59,21 +63,22 @@ class CustAppBar extends StatelessWidget implements PreferredSizeWidget {
                   Text(
                     "HOME-",
                     style: TextStyle(
-                      fontFamily: "poppins bold",
-                      fontSize: 12,
-                    ),
+                        fontFamily: "poppins bold",
+                        fontSize: 12,
+                        color: textColor),
                   ),
                   Text(
                     " Sujal Dave, Ratanada, Jodhpur (Raj)",
                     style: TextStyle(
-                      fontFamily: "poppins regular",
-                      fontSize: 12,
-                    ),
+                        fontFamily: "poppins regular",
+                        fontSize: 12,
+                        color: textColor),
                   ),
                   const SizedBox(width: 2),
                   Image.asset(
                     "assets/icons/downarrow.png",
                     height: 12,
+                    color: textColor,
                   )
                 ],
               ),

@@ -61,6 +61,7 @@ flutter:
     - assets/images/
     - assets/fonts/
     - assets/icons/
+    - assets/images/homescreen/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
@@ -81,8 +82,10 @@ flutter:
     - family: Poppins Regular
       fonts:
          - asset: assets/fonts/Poppins-Regular.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
+
+    - family: PT Seriff Bold
+      fonts:
+         - asset: assets/fonts/PTSerif-Bold.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
