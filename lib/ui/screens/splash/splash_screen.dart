@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:blinkit_clone/domain/constants/appcolors.dart';
-import 'package:blinkit_clone/ui/screens/splash/login_screen.dart';
+import 'package:blinkit_clone/ui/screens/login/login_screen.dart';
 // ignore: unused_import
 import 'package:blinkit_clone/ui/widgets/uihelper.dart';
 import 'package:flutter/material.dart';

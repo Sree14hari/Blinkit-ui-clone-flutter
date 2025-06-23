@@ -1,3 +1,4 @@
+import 'package:blinkit_clone/ui/screens/bottomnavbar/bottomnavbar.dart';
 import 'package:blinkit_clone/ui/screens/homescreen/homescreen.dart';
 import 'package:blinkit_clone/ui/widgets/uihelper.dart';
 import 'package:flutter/material.dart';
@@ -85,7 +86,7 @@ class LoginScreen extends StatelessWidget {
                           Navigator.pushReplacement(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => Homescreen()));
+                                  builder: (context) => Bottomnavbar()));
                         },
                         autofocus: true,
                         child: Row(
@@ -132,7 +133,7 @@ class LoginScreen extends StatelessWidget {
                         Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Homescreen()));
+                                builder: (context) => Bottomnavbar()));
                       },
                       child: Text(
                         "or login with phone number",
