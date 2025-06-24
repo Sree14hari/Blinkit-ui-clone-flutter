@@ -1,4 +1,5 @@
-import 'package:blinkit_clone/ui/screens/splash/splash_screen.dart';
+import 'package:blinkit_clone/ui/screens/login/login_screen.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: const SplashScreen(),
+      home: const LoginScreen(),
     );
   }
 }
