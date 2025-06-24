@@ -27,7 +27,7 @@ A visually accurate clone of the Blinkit grocery delivery app UI, built using Fl
 
 ## 📸 Screenshots
 
-Coming soon...
+![alt text](Screenshot_20250624-121750.jpg)
 
 ---
 
@@ -35,17 +35,37 @@ Coming soon...
 
 ```
 
-blinkit\_ui\_clone/
+blinkit_ui_clone/
 ├── lib/
 │   ├── main.dart
-│   ├── screens/
-│   ├── widgets/
-│   ├── models/
-│   └── constants/
+│   ├── domain/
+│   │   └── constants/
+│   │       └── appcolors.dart
+│   ├── ui/
+│   │   ├── screens/
+│   │   │   ├── bottomnavbar/
+│   │   │   │   └── bottomnavbar.dart
+│   │   │   ├── category/
+│   │   │   │   └── categorysection.dart
+│   │   │   ├── homescreen/
+│   │   │   │   └── homescreen.dart
+│   │   │   ├── login/
+│   │   │   │   └── login_screen.dart
+│   │   │   ├── printer section/
+│   │   │   │   └── printerpage.dart
+│   │   │   └── shopingscreen/
+│   │   │       └── shoping_screen.dart
+│   │   └── widgets/
+│   │       ├── customappbar.dart
+│   │       ├── Customcard.dart
+│   │       ├── HomeScreenCards.dart
+│   │       ├── minicards.dart
+│   │       └── uihelper.dart
 ├── assets/
 │   ├── images/
 │   └── icons/
 └── pubspec.yaml
+
 
 ````
 
@@ -73,15 +93,3 @@ blinkit\_ui\_clone/
    ```
 
 ---
-
-## 🔄 To-Do
-
-* [ ] Complete Home UI
-* [ ] Add product detail page
-* [ ] Implement cart and checkout UI
-* [ ] Add light/dark mode toggle
-* [ ] Backend/API integration (future)
-
-#   B l i n k i t - u i - c l o n e - f l u t t e r 
- 
- 
